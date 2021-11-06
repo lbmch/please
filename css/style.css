@@ -215,11 +215,11 @@ h2 {
 }
 
 @keyframes eight {
-    0%   {opacity: 0; font-size: 50px;}
+    0%   {opacity: 0; font-size: 40px;}
     25%  {opacity: 0.5; }
-    50%  {opacity: 1; font-size: 60px; }
+    50%  {opacity: 1; font-size: 50px; }
     75%  {opacity: 0.5; }
-    100% {opacity: 0; font-size: 70px;}
+    100% {opacity: 0; font-size: 60px;}
 }
 
 
@@ -257,7 +257,7 @@ h2 {
     padding: 10px;
     background-color: rgb(110, 0, 110);
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     color: white;
     font-size: 16px
 }
