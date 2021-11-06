@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please</title>
+    <link rel="icon" href="images/favicon.svg" type="image/gif" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <div class="container">
+        <button id="music" class="music">Play Music</button>
+        <h2 class="first">Hello <br> Again</h2>
+        <h2 class="second">Wanna <br> Know <br> The <br> Best <br> Things <br> About <br> Gemini</h2>
+        <h2 class="third">They <br> Are</h2>
+        <h2 class="single-1">Intelligent</h2>
+        <h2 class="single-2">Kind</h2>
+        <h2 class="single-3">Loyal <br> partner <br> and <br> friend</h2>
+        <h2 class="single-4">Honest <br> And <br> Outspoken</h2>
+        <h2 class="single-5">Fun</h2>
+        <h2 class="single-6">Social <br> Butterfly</h2>
+        <h2 class="fourth">Now <br> Really <br> Important <br> Question</h2>
+        <h2 class="fifth">Is <br> Gemini <br> Compatible <br> With <br> Pisces <br> In <br> Relationships? </h2>
+        <h2 class="sixth">There <br> Were <br> Many <br> Answers <br> In <br> Google</h2>
+        <h2 class="answer-1">
+            <span class="whoops">
+            Pisces will feel undervalued and 
+            emotionally dissatisfied with Gemini.
+            </span> ... 
+            With that said, Gemini and Pisces are 
+            considered to be an incompatible zodiac match. 
+            But because they're both mutable signs, 
+            they do have what it takes to work 
+            through the many ups and downs of their relationship
+        </h2>
+        <h2 class="answer-2">
+            Gemini and Pisces will be loving 
+            and supportive of each other in 
+            all aspects, but they speak a very 
+            different language sexually, 
+            emotionally, and intellectually, 
+            so this union won't be an easy one,
+            ” Duval says. <span class="whoops">“Pisces will feel undervalued 
+            and emotionally dissatisfied with Gemini</span>
+        </h2>
+        <h2 class="seventh-1">Please</h2>
+        <h2 class="seventh-2">Please</h2>
+        <h2 class="seventh-3">Please</h2>
+
+        <h1 class="eight">Don't <br> Hurt <br> My <br> Feelings</h1>
+        
+        <button class="button" id="reload">Reload</button>
+
+    </div>
+
+
+    <h3>
+        © lbmch - All Rights Reserved
+    </h3>
+
+    <script>
+        document.getElementById("reload").onclick = (() => location.reload());
+
+        // coldplay - the scientist 
+        const audio = new Audio('mp3/cd.mp3');
+        audio.loop = true;
+        let isPlaying = false;
+        const musicButton = document.getElementById("music");
+        musicButton.onclick = (() => {
+            if (!isPlaying) {
+                audio.play();
+                isPlaying = true;
+                musicButton.textContent = 'Pause Music'; 
+
+            } else {
+                audio.pause();
+                isPlaying = false;
+                musicButton.textContent = 'Play Music'; 
+
+            }
+        });
+    </script>
+</body>
+</html>
